@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Risk Analyzer</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='s.css') }}">
+</head>
+<body>
+
+<div class="box">
+    <h2 id="main-heading">Travel Guard🌍</h2>
+
+    <div class="input-row">
+        <select id="country">
+            <option value="">Select Country</option>
+        </select>
+
+        <div class="input-wrapper">
+            <input type="text" id="city" placeholder="Start typing city name">
+            <ul id="suggestions"></ul>
+        </div>
+
+        <button id="analyzeBtn">
+            <span id="btnText">Analyze</span>
+            <span class="spinner" id="spinner"></span>
+        </button>
+    </div>
+
+    <div class="result" id="output"></div>
+
+    <div id="translateBox">
+        <select id="lang">
+            <option value="">Select Language</option>
+        </select>
+        <button id="translateBtn">Translate</button>
+    </div>
+
+    <div class="result" id="translated"></div>
+
+    <button id="audioBtn">🔊 Play Audio</button>
+    <audio id="audio"></audio>
+</div>
+
+<script src="{{ url_for('static', filename='j.js') }}"></script>
+</body>
+</html>

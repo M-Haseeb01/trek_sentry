@@ -1,0 +1,7 @@
+flask
+aiohttp
+python-dotenv
+google-generativeai
+langchain
+langchain-google-genai
+gradio-client
