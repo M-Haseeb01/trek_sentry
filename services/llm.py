@@ -1,4 +1,3 @@
-from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage
 from config import GOOGLE_API_KEY
 from langchain_google_genai import ChatGoogleGenerativeAI
